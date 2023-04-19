@@ -1,0 +1,15 @@
+name: "Restore artifact files"
+description: "Downloads Github Action artifact files and fails gracefully if they don't exist."
+inputs:
+  name:
+    description: 'Artifact name'
+    required: true
+outputs: 
+  exists: 
+    description: 'Whether artifact was found'
+  path: 
+    description: 'Path to downloaded artifact files'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
