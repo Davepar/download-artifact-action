@@ -21,7 +21,7 @@ File path to the downloaded artifact files.
 ## Example usage
 
 ```yaml
-uses: Davepar/download-artifact-action@v1.1
+uses: Davepar/download-artifact-action@v1.0
 with:
   name: 'replace-with-artifact-name'
 ```
